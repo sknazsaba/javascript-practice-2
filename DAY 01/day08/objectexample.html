@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>objects</h1>
+    <p id="demo"></p>
+    <script>
+      //object ceate
+      const person = {
+        firstName: "john",
+        lastName: "doe",
+        age: 50,
+        eyecolor: "blue",
+        "skin color": "fair",
+        fullName: function () {
+          return this.firstName + " " + this.lastName;
+        },
+      };
+      //access the object property
+      console.log(person.firstName);
+      console.log(person["skin color"]);
+      console.log(person["firstName"]);
+      console.log(person["age"]);
+      console.log(person["lastName"]);
+      const result = person.fullName();
+      document.getElementById("demo").innerHTML = result;
+       // person.firstName + " " + person.lastName;
+    </script>
+  </body>
+</html>
