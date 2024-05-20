@@ -1,0 +1,11 @@
+document.getElementById("demo").innerHTML= "Saba";
+let str="Apple , Banana , Kiwi";
+ const bananaIndex =str .indexOf("Banana");
+ console.log("position",bananaIndex);
+ const newString=str.slice(bananaIndex);
+ console.log("New string after slice", newString);
+ const searchIndex=str.search("Banana",15);
+ console.log("search method Index",searchIndex);
+ let text2 = "The rain in SPAIN stays mainly in the plain";
+ const matchReturnValue =text2.match("ain");
+ console.log("returned value", matchReturnValue);
