@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>string Example</h1>
+    <p id="demo"></p>
+    <script>
+      const text = "ABCDEF";
+      console.log("length of string is::", text.length);
+      //requirment CD extract from above the text
+      //slice(start p end p )
+      //it return new string
+      const extractedText = text.slice(2, 4);
+      console.log("Extracted text is::", extractedText);
+
+      let text1 = "Apple ,Banana , Kiwi";
+      let part = text1.slice(7, 13);
+      console.log("part:", part);
+      document.getElementById("demo").innerHTML = part;
+      let name = "Azhar, shaikh";
+      let firstName = name.slice(7, 13);
+      console.log("firstName:", firstName);
+      document.getElementById("demo").innerHTML = firstName;
+      //substring and slice method are same
+      //just that if you pass start or end less then 0
+      //i.e negative number it will consider it as 0
+      let partsubstring = text1.substring(7, 13);
+      console.log(
+        "Extracted Banana from text1 via substring method::",
+        partsubstring
+      );
+      //substr and slice are similar and the difference is the second is leghnth of the extracted string
+      const partsubstr=text1.substr(7 ,6);
+      console.log("Banana extracted via substr method::", partsubstr);
+
+    </script>
+  </body>
+</html>

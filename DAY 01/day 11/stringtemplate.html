@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en"
+<!DOCTYPE
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +12,10 @@
         const str1="coaching classes";
         const nextstr="Join Now.";
         const str =`Azhar's "sir",${str1} is the best in town.${nextstr}`;
-        let firstName="john";
-        let LastName="Doe";
-        const str2=`Welcome ${firstName},${LastName}!`;
-        let price=11;
-        let VAT =0.3333;
-        let total =`Total: ${price* (1+VAT).toFixed(2)}`;
-
-        document.getElementById('demo').innerHTML=total;
+        let price= 10;
+        let vat = 0.25;
+        let total = `Total:${(price*(1+vat)).toFixed(2)}`;
+        document.getElementById("demo").innerHTML=total;
     </script>
 </body>
 </html>
