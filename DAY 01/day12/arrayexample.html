@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Array</h1>
+    <p id="demo"></p>
+    <script>
+      //data type
+      //Number,string,bigInt,Null,undefined,object
+      //object----object,array
+      //object-entity-car,person-----objects--propertyof methods
+      //const car1 = "Renault";
+      // const car2 = "Maruti";
+      // const car3 = "volve";
+      // const car =["Renault","Maruti","Volve"];
+
+      //           0             1      2
+      const cars = [
+        {
+          name: "volve",
+          modal: 400,
+        },
+        {
+          name: "maruti",
+          modal: 800,
+        },
+      ];
+      // const person =[
+      //    {firstName:"Azhar",lastName:"shaikh"},
+      //     {firstName:"muddassir",lastName:"deshmukh"}
+      // ];
+      //  console.log(person[0].lastName);
+
+      document.getElementById(
+        "demo"
+      ).innerHTML = `car1 Name:${cars[0].name}car1 Modal:${cars[0].modal}</br>
+        car2 Name:${car[1].name} car 2 Modal:${cars[1].modal}</br> car3:${car[2]}`;
+    </script>
+  </body>
+</html>
