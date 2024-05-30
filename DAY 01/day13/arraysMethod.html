@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>arrays method</h1>
+    <p id="demo"></p>
+    <script>
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      fruits.pop();
+      fruits.push("grapes");
+     // fruits.pop();
+      //fruits.pop();
+      fruits.shift();
+      fruits.unshift("lemon");
+      console.log("fruits",fruits);
+      fruits[0]="kiwi";
+      console.log("fruits",fruits);
+      console.log("Array length::",fruits.length);
+      //fruits[fruits.length]="watermelon"
+      const myGirl=["saba","alishba"];
+      const myBoys =["irfan","hussain","sadeem"];
+      const arr3 =["robin","hud"];
+      const myChildern=myBoys.concat(myGirl,arr3);
+      console.log("childern array",myChildern);
+
+      document.getElementById("demo").innerHTML = fruits.join("*");
+    </script>
+  </body>
+</html>
