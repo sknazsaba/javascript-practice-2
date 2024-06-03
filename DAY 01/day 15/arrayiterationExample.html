@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const numArray=[34,56,23,56,677,43,22];
+        numArray.forEach(function(value, index ,array){
+         //block of code
+         console.log("value::",value, "index",index, "array entire",array);
+         document.getElementById("demo").innerHTML+= " " +value;
+        });
+    </script>
+</body>
+</html>
