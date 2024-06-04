@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="sum"></p>
+    <script>
+        const numbers=[45, 4, 9, 16, 25];
+        const sum= numbers.reduce(generatesum,100);
+        console.log("sum of array element is::",sum);
+        document.getElementById("demo").innerHTML=
+        "Given Array::"+numbers.join(" , ");
+
+        document.getElementById("sum").innerHTML=
+        "The sum of above array is::"+ sum;
+         function generatesum(  accumulator,value,index,array){
+            console.log(accumulator,value,index,array);
+            return accumulator + value;
+
+         }
+    </script>
+</body>
+</html>
