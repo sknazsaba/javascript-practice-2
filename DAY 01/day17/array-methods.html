@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p id="demo"></p>
+   <script>
+    const numbers= [45, 4, 9, 16, 25];
+    const allOver18 =numbers.every(function(value){
+        console.log("this is in every method",value);
+        return value >18;
+    });
+    console.log("The all over 18 is::",allOver18);
+    document.getElementById("demo").innerHTML="All over 18 is :" + allOver18
+    const alphabets ="ABCDEF";
+    const arrayAlphabets=Array.from(alphabets);
+    console.log("arrayAlphabets",arrayAlphabets);
+   </script>
+</body>
+</html>
