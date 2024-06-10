@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Good evening</p>
+    <script>
+     const hour= new Date().getHours();
+     console.log("current hour::",hour);
+     let greating;
+     if(hour>10){
+        greating="Good morning!!"
+     }else if (hour< 18){
+         greating = "Good Day!!";
+     }else{
+        greating = "Good evening!!";
+     }
+        document.getElementById("demo").innerHTML=greating;
+     
+    </script>
+</body>
+</html>

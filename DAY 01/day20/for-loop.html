@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const cars = ["Maruti", "Renault", "Bmw"];
+      cars.push("Tata");
+      let text = "";
+      //initialization let i=0;
+      //condition check
+      //execute the block of code
+      //Increament
+      //Iteration 0--i=0 0<4(true) text=car[0]=Maruti i++
+      //Iteration 1--1<4 Maruti+cars[1] text= MarutiRenault i++=2
+      //Iteration 2 i=2 2<4 MarutiRenault+cars[2]=MarutiRenaultBmw i++3
+      //Iteration 3 i=3 3<4 MarutiRenaultBmw+cars[3] =MarutiRenaultBmw i++ i=4
+      // Iteration 4 i=4 4<4
+
+      for (let i = 0; i < cars.length; i++) {
+        console.log("Iteration::", i, cars[i], text);
+        text += cars[i];
+      }
+      document.getElementById("demo").innerHTML = text;
+    </script>
+  </body>
+</html>
