@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    var i, 
+        j, 
+        n = 5; 
+      for (i = 1; i <= n; i++) 
+      { 
+        for (j = i; j <= n; j++)  
+        { 
+          document.write( 
+            String.fromCharCode("A".charCodeAt(0) - 1 + j) 
+            + "  "
+          ); 
+        } 
+        document.write("<br>"); 
+      } 
+//   function alphabetTriangle(n){
+ //   let charCode = 65;
+ //   for ( let i=0; i<n; i++){
+  //    let str = "";
+  //    for (let j=0; j<=i; j++){
+  //      str += string.fromCharCode(charCode) + "";
+   //     charCode++;
+    //    if(charCode > 90) charCode = 65;
+   //   }
+   //   console.log(str.trim());
+   // }
+  // }
+  //       document.getElementById("demo").innerHTML=alphabetTriangle(5);
+  </script>  
+</body>
+</html>
