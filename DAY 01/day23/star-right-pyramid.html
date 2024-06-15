@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Right angle Triangle using star</h1>
+    <input id="depth" type="number"/>
+    <button onclick="handleonClickRightTraingle()">print Right Angle Triangle</button>
+    <p id="demo"></p>
+    <script>
+      function handleonClickRightTraingle() {
+        const n = Number(document.getElementById("depth").value);
+      let text = "";
+      for (let index = 1; index < n; index++) { //row
+        console.log("Iteration external loop index value",index);
+        for(let j = 0; j < n-index; j++) { //column
+            console.log("Iteration Internal loop j value",j);
+        text+="&nbsp;&nbsp;";
+        }
+            for (let k=0; k < 2* index -1; k++){
+                text +="*";
+             }
+             text +="</br>";
+          }
+         console.log(text);
+      document.getElementById("demo").innerHTML = text;
+      }
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>square start</h1>
+    <p id="demo"></p>
+    <script>
+      const n = 5;
+      let text = "";
+      for (let index = 0; index < n; index++) {
+         for (let j = 0; j < n; j++) {
+            text += " * ";
+         }
+        text+="</br>"
+      }
+      document.getElementById("demo").innerHTML = text;
+    </script>
+  </body>
+</html>
