@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      try {
+        //block of code is the code where
+        // devoleper think that there can be same error
+        adddalert("Welcome guest!");
+      } catch (error) {
+        //error occured
+        console.log("Error accured", error);
+        document.getElementById("demo").innerHTML = error;
+      }
+    </script>
+  </body>
+</html>
