@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        //normal javascript
+       // function myfunction(){
+            //block of code
+       // }
+       // myfunction();
+        //finction assigned / used as variable name
+      //  const personfullName= function(a, b){
+                //block of code
+          //  };
+       //     personfullNam(3, 5);
+            //arrow function ---Es6
+          //  const newFunction=()=>{
+                //block of code
+           // };
+
+ const numbers=[1, 2, 3, 4];
+ numbers.forEach((value, index, arr)=>{
+            //block
+  console.log("value", value, index, arr);
+            
+     });
+     //map with arrow
+     const newArrayNormalArrow = numbers.map((value)=>{
+        return value;
+     });
+     // map with arrow shorthand (only applicable if we have only one line return code)
+     const newArrayShorthand= numbers.map((value) => 2);
+    </script>
+</body>
+</html>
