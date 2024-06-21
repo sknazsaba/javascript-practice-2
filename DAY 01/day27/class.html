@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      class car {
+        constructor(name, year) {
+          //block of code
+          this.name = name;
+          this.year = year;
+          console.log(
+            "constructor method called.This is used for initialization"
+          );
+        }
+        age(){
+            const currentDate = new Date();
+            return currentDate.getFullYear() - this.year;
+        }
+      }
+      const car1 = new car("Tata", 2023);
+      const car2 = new car("Renault", 2022);
+      document.getElementById("demo").innerHTML =
+       car1.name +
+        "</br> " +
+         car1.year +
+         "</br>"+ 
+         "age of car1::" + 
+          car1.age() +
+           "</br>" + 
+       car2.name +
+       "</br> "+
+        car2.year+
+         "</br>"+
+          "age of car2::" +
+           car2.age();
+    </script>
+  </body>
+</html>
