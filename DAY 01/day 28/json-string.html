@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p></p>
+    <script>
+      let text =
+        '{ "employees" : [' +
+        '{ "firstName":"John" , "lastName":"Doe" },' +
+        '{ "firstName":"Anna" , "lastName":"Smith" },' +
+        '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+        //aisa hamare pss rahta hai aur usko json mai convert karna hai tu 
+        //json ka method hai
+        const obj=JSON.parse(text);
+        console.log("converted obj", obj);
+    </script>
+  </body>
+</html>
